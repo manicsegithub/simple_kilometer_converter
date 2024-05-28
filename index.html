@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <!--CSS start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS end-->
+
+    <!-- Bundle start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+    <!-- Bundle end -->
+<script>
+function convert()
+{
+  var num;
+  num = parseInt(document.getElementById("first").value);
+//   numTwo = parseInt(document.getElementById("second").value);
+// numTwo = 1000;
+  metre = num * 1000;
+  document.getElementById("metre").value = metre;
+  centimeter = metre * 100 ;
+  document.getElementById("centimeter").value = centimeter;
+  inch = centimeter/2.54 ;
+  document.getElementById("inch").value = inch;
+  feet = inch/12;
+  document.getElementById("feet").value = feet;
+}
+</script>
+</head>
+<body style="background-color: #E0F0F1;">
+
+    <nav class="nav" style="background-color: rgb(194, 247, 229); ">
+        <h3 style="font-size: 32px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> Simple Kilometer Converter</h3>
+      </nav>
+
+      <div style="text-align:center; " > <br>
+<p>Enter the Kilometer: <input id="first"> Km </p> 
+<!-- <p>Enter the Second Number: <input id="second"></p> -->
+<button onclick="convert()" style="text-align: 50%;">Convert</button> <br> <br>
+<form>
+<p >The Metre is :  <input id="metre" > m </p> <br>
+ 
+<p >The Centi-meter is :  <input id="centimeter" > cm </p> <br>
+<p>The Inch is :  <input id="inch" > i </p> <br>
+<p>The Feet is :  <input id="feet" > ft </p> <br>
+</form>
+</div>
+
+<nav class="nav" >
+  <p style="text-align: left;margin-left: 45%;"> Education purpose only.. </p>
+</nav>
+
+
+
+</body>
+</html>
